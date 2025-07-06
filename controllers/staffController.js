@@ -31,8 +31,6 @@ exports.login = async (req, res) => {
       return error(res, new Error(), 'Invalid PIN');
     }
 
-    await staff.update({ is_active: true });
-
     const token = jwt.sign(
       { id: staff.id, name: staff.name, email: staff.email },
       "secret-key",
