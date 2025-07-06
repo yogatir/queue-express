@@ -24,18 +24,27 @@ Sistem manajemen antrian real-time menggunakan Express.js, Sequelize, dan Socket
    ```bash
    git clone https://github.com/yogatir/queue-express.git
    cd queue-express
+   ```
 
 2. Install dependencies
-    ```npm install
+    ```bash
+    npm install
+    ```
 
 3. Jalankan migrasi database
-    ```npx sequelize-cli db:migrate
+    ```bash
+    npx sequelize-cli db:migrate
+    ```
 
 4. Populate database dengan records
-    ```npx sequelize-cli db:seed:all
+    ```bash
+    npx sequelize-cli db:seed:all
+    ```
 
 5. Jalankan server
-    ```npm run dev
+    ```bash
+    npm run dev
+    ```
 
 ---
 
